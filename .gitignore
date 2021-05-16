@@ -128,3 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .vscode/settings.json
+
+# dependencies
+frons/node_modules
+
+# production
+frons/build
