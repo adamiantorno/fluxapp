@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'rest_auth',
     'corsheaders',
     
-    'utors',
+    'utors.apps.UtorsConfig',
 ]
 
 MIDDLEWARE = [
