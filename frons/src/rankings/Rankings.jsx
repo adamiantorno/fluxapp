@@ -1,11 +1,11 @@
 import React from 'react'
 
-function App() {
+function Rankings() {
   return (
     <h1>
-      Create React App
+      Rankings Page
     </h1>
   );
 }
 
-export default App
+export default Rankings
