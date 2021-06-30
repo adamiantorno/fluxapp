@@ -11,8 +11,14 @@ module.exports = {
         use: ["babel-loader"],
       },
       { 
-        test: /\.css$/, 
-        use: ['style-loader', 'css-loader'] 
+        test: /\.scss$/, 
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader" 
+        }, {
+          loader: "sass-loader"
+        }]
       }
     ],
   },
@@ -25,7 +31,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: __dirname + '/src/index.html',
+      template: __dirname + '/dist/index.html',
       filename: 'index.html',
       inject: 'body'
   })
