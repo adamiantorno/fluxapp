@@ -6,10 +6,10 @@ import {
   Link
 } from "react-router-dom"
 
-import Profile from './profile/Profile'
-import Rankings from './rankings/Rankings'
-import Progress from './progress/Progress'
-import Search from './search/Search'
+import Profile from './components/profile/Profile'
+import Rankings from './components/rankings/Rankings'
+import Progress from './components/progress/Progress'
+import Search from './components/search/Search'
 
 export default function App() {
   return (

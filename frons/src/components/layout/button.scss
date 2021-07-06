@@ -1,0 +1,31 @@
+@import "../../scss/variables";
+
+.storybook-button {
+  //font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: $font-stack;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.storybook-button--primary {
+  color: white;
+  background-color: $primary-colour-1;
+}
+.storybook-button--secondary {
+  color: white;
+  background-color: $sec-colour-1;
+}
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}

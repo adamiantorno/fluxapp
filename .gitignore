@@ -134,3 +134,8 @@ frons/node_modules
 
 # production
 frons/build
+
+#storybook
+.storybook
+stories
+storybook-static
