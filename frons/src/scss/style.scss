@@ -18,9 +18,15 @@ a {
   text-decoration: none;
 }
 
+input {
+  border: none;
+  color: $text-colour-2;
+  font-weight: 500;
+}
+
 input:focus {
   outline: none;
-  color: inherit;
+  color: $text-colour-2;
 }
 
 .df {

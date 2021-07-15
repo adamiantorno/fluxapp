@@ -1,9 +1,29 @@
 @import "../../scss/variables";
 @import "../../scss/style.scss";
 
+$input-radius: 10px;
+$input-small-size: 300px;
+$input-med-size: 500px;
+$input-fill-size: 100%;
+$input-padding-small: 15px 20px;
+$input-padding-large: 20px 20px;
+
 .input-main {
     border-radius: 8px;
-    padding: 12px 20px;
-    font-weight: 550;
+    background-color: $light-theme-3;
+    padding: $input-padding-small;
+    text-transform: capitalize;
+}
+
+.input--fill {
+    width: $input-fill-size;
+}
+
+.input--medium {
+    width: $input-med-size;
+}
+
+.input--small {
+    width: $input-small-size;
 }
 

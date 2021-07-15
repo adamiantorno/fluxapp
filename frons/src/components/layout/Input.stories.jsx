@@ -12,7 +12,20 @@ export default {
 
 const Template = (args) => <Input {...args} />;
 
-export const Main = Template.bind({});
-Main.args = {
-    placeholder: 'username'
+export const Fill = Template.bind({});
+Fill.args = {
+    size: 'fill',
+    placeholder: 'Fill'
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+    size: 'medium',
+    placeholder: 'medium'
+};
+
+export const Small = Template.bind({});
+Small.args = {
+    size: 'small',
+    placeholder: 'small'
 };

@@ -8,7 +8,6 @@ $search-size: 275px;
 
 .search-container {
     background-color: $light-theme-3;
-    color: $text-colour-2;
     padding: $search-padding;
     width: $search-size;
     border-radius: $search-radius;
@@ -21,43 +20,4 @@ $search-size: 275px;
 .input-search {
     padding: $search-padding;
     background-color: inherit;
-    border: none;
 }
-
-
-
-
-// .search-container {
-//     display: flex;
-//     align-items: center;
-//     background-color: $light-theme-3;
-//     padding: $search-padding;
-//     border-radius: $search-radius;
-//     color: $text-colour-3;
-//     // box-shadow: 0 6px 20px 0 $primary-colour-3;
-
-//     .search-icon {
-//         display: flex;
-//         align-items: center;
-//         color: $text-colour-2;
-//         margin: 0px 2px;
-//     }
-
-// }
-
-// .search-form {
-//     padding: $search-padding;
-// }
-
-// .search {
-//     background-color: inherit;
-//     border: none;
-//     font-size: $search-text-size;
-//     width: $search-size;
-// }
-
-// .search:focus {
-//     outline: none;
-//     border: none;
-//     color: $text-colour-2;
-// }
