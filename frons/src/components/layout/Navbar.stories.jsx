@@ -4,7 +4,15 @@ import { Navbar } from './Navbar';
 
 export default {
     title: 'Component/Navbar',
-    component: Navbar
+    component: Navbar,
+    argTypes: {
+        username: {control: 'text' },
+    },
 }
 
-export const Template = () => <Navbar />
+const Template = (args) => <Navbar {...args} />
+
+export const Main = Template.bind({});
+Main.args = {
+    username: 'aihustle'
+};

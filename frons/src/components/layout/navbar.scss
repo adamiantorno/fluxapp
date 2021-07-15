@@ -1,0 +1,144 @@
+@import "../../scss/variables";
+@import "../../scss/style.scss";
+
+$nav-height: 60px;
+$nav-border: 1px solid $light-theme-4;
+$nav-ani-speed: 500ms;
+
+$drop-br: 20px;
+$drop-width: 200px;
+
+@mixin flex-setup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 1rem;
+    height: $nav-height;
+    color: $text-colour-1;
+}
+
+.navbar-nav {
+    max-width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title {
+    color: $primary-colour-1;
+}
+
+.navbar-items {
+    height: 100%;
+    max-width: 100%;
+    justify-content: flex-end;
+}
+
+.navbar-list {
+    @include flex-setup;
+}
+
+.nav-item {
+    @include flex-setup;
+    width: 48px;
+
+    .icon-link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 2px;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            color: $text-colour-1;
+            stroke-width: 0.5;
+            height: 18px;
+            width: 18px;
+        }
+    }
+
+    .icon-link:hover {
+        background-color: $light-theme-2;
+
+        svg {
+            color: $primary-colour-1;
+        }
+    }
+}
+
+.hover {
+    position: absolute;
+    top: 48px;
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    // transition: opacity $nav-ani-speed;
+
+    p {
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+
+.dropdown {
+    position: absolute;
+    top: 58px;
+    width: $drop-width;
+    transform: translateX(-40%);
+    border-radius: $drop-br;
+    padding: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    hr {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .account-info {
+        @include flex-setup;
+        justify-content: flex-start;
+
+        .profile-pic {
+            margin: 0px 10px;
+            height: 45px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.menu-item {
+    @include flex-setup;
+    justify-content: flex-start;
+    height: 45px;
+    border-radius: 15px;
+    transition: background $nav-ani-speed;
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    color: $text-colour-2;
+
+    .drop-icon {
+        @include flex-setup;
+        height: 20px;
+        width: 20px;
+        margin: 2px 7px;
+    }
+}
+
+.menu-item:hover {
+    color: $primary-colour-1;
+    background-color: $light-theme-3;
+}
+
+
+ 
+

@@ -4,7 +4,15 @@ import { Search } from './Search';
 
 export default {
     title: 'Component/Search',
-    component: Search
+    component: Search, 
+    argTypes: {
+        placeholder: { control: 'text' },
+    },
 }
 
-export const Template = () => <Search />
+const Template = (args) => <Search {...args} />
+
+export const Main = Template.bind({});
+Main.args = {
+    placeholder: 'Search Flux...'
+};

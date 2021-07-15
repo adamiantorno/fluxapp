@@ -4,7 +4,15 @@ import { Input } from './Input';
 
 export default {
     title: 'Component/Input',
-    component: Input
-}
+    component: Input,
+    argTypes: {
+        placeholder: { control: 'text' },
+    },
+};
 
-export const Template = () => <Input  />;
+const Template = (args) => <Input {...args} />;
+
+export const Main = Template.bind({});
+Main.args = {
+    placeholder: 'username'
+};
